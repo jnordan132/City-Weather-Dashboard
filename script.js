@@ -106,8 +106,9 @@
               const historyItem = document.createElement("input");
               // <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"></input>
               historyItem.setAttribute("type", "text");
+              historyItem.setAttribute("style", "margin-bottom: 10px;")
               historyItem.setAttribute("readonly", true);
-              historyItem.setAttribute("class", "form-control d-block bg-white");
+              historyItem.setAttribute("class", "form-control d-block bg-grey");
               historyItem.setAttribute("value", searchHistory[i]);
               historyItem.addEventListener("click", function() {
                   getWeather(historyItem.value);
